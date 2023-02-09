@@ -1,0 +1,8 @@
+# hasilSoalNo 1
+
+1. mencari panjang maksimum yang dapat dimuat kolom, yaitu 667543 sepanjang (6)
+2. Menambahkan bintang pada setiap angka yang tidak sepanjang panjang maksimum kolom
+3. Membagi angka-angka ke dalam tabel secara berurutan
+4. Menambahkan pemisah (|) antar kolom
+5. Menambahkan tanda plus (+) sebagai sudut kolom menggunakan looping
+6. Hasil akhir ditentukan menggunakan for each
