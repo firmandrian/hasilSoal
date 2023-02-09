@@ -1,0 +1,16 @@
+# hasilSoalNo 2
+
+Pada program ini, kita menggunakan dua perulangan, yaitu perulangan for dan perulangan while. Perulangan for digunakan untuk menelusuri setiap elemen pada array. Sedangkan perulangan while digunakan untuk menentukan apakah ada bagian dari array yang merupakan bukit atau lembah.
+
+Untuk setiap elemen pada array, kita membandingkan nilainya dengan elemen sebelumnya. Jika nilainya lebih besar, maka kita tandai dengan mengubah nilai dari variabel inc menjadi true. Jika nilainya lebih kecil, maka kita tandai dengan mengubah nilai dari variabel dec menjadi true.
+
+Setelah kita melakukan perulangan while untuk menentukan apakah ada bagian yang merupakan bukit atau lembah, kita mengecek apakah inc atau dec bernilai true. Jika salah satunya bernilai true, maka kita tambahkan 1 pada castleCount.
+
+Dengan demikian, hasil dari program tersebut adalah 5 karena pada array [3, -1, -5, -5, 2, 4, 7, 5, 1, 1, 1, 4], terdapat 5 bagian yang merupakan bukit atau lembah, yaitu:
+
+Bagian pertama dari array adalah bukit karena nilai 3 lebih besar dari -1.
+Bagian kedua dari array adalah lembah karena nilai -1 lebih kecil dari -5.
+Bagian ketiga dari array adalah lembah karena nilai -5 lebih kecil dari -5.
+Bagian keempat dari array adalah bukit karena nilai 2 lebih besar dari -5.
+Bagian kelima dari array adalah bukit karena nilai 4 lebih besar dari 2.
+Dengan demikian, jumlah castleCount adalah 5.
