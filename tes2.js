@@ -1,65 +1,34 @@
-// function countCastles(heights) {
-//     let castleCount = 1;
-//     let direction = 0;
-//     for (let i = 1; i < heights.length; i++) {
-//         if (direction === 0) {
-//             if (heights[i] > heights[i - 1]) {
-//                 direction = 1;
-//                 castleCount++;
-//             } else if (heights[i] < heights[i - 1]) {
-//                 direction = -1;
-//             }
-//         } else if (direction === 1) {
-//             if (heights[i] < heights[i - 1]) {
-//                 direction = -1;
-//                 castleCount++;
-//             }
-//         } else if (direction === -1) {
-//             if (heights[i] > heights[i - 1]) {
-//                 direction = 1;
-//                 castleCount++;
-//             }
-//         }
-//     }
-//     return castleCount;
-// }
-
-// let sampleInput = [3, -1, -5, -5, 2, 4, 7, 5, 1, 1, 1, 4];
-// console.log(countCastles(sampleInput));
-
-
-
 function hitungKastil(array) {
-    let jumlahKastil = 0;
-    
+    let jmlhKastil = 1;
+
     for (let i = 1; i < array.length; i++) {
       let inc = false;
       let dec = false;
       
+      // operator while akan mengecek apakah nilai saat ini lebih besar dari elemen sebelum nya, jika iya maka nilai inc menjadi true dan ditambah 1
       while (i < array.length && array[i] > array[i - 1]) {
         inc = true;
         i++;
       }
       
       if (inc) {
-        jumlahKastil++;
+        jmlhKastil++;
       }
-      
+         // operator while akan mengecek apakah nilai saat ini lebih kecil dari elemen sebelum nya, jika iya maka nilai dec menjadi true dan ditambah 1
       while (i < array.length && array[i] < array[i - 1]) {
         dec = true;
         i++;
       }
       
       if (dec) {
-        jumlahKastil++;
+        jmlhKastil++;
       }
-    }
-    
-    return jumlahKastil + (array.length > 0 ? 1 : 0);
+    };
+    return jmlhKastil;
   }
-  
+  //syarat untuk menjadi lembah/bukit adalah ketika naik dan turun harus bernilai true, jika false maka tidak akan menjadi lembah/bukit
   const X = [3, -1, -5, -5, 2, 4, 7, 5, 1, 1, 1, 4];
   const hasil = hitungKastil(X);
   console.log(hasil);
-  
 
+  
